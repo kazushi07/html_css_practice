@@ -1,0 +1,27 @@
+table {
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+table th, table td {
+  border: solid 1px black;
+  /*実線 1px 黒*/
+}
+
+.time-zone{
+  display: flex;
+
+  background-color: antiquewhite;
+}
+
+
+.time-start{
+  /* background-color: blue; */
+  width: 3vw;
+  height: 3vw;
+}
+
+.time-end{
+  /* background-color: red; */
+  width: 3vw;
+  height: 3vw;
+}
