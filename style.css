@@ -1,21 +1,58 @@
 table {
+  /* テーブルの境界線を分離する */
   border-collapse: separate;
-  border-spacing: 5px;
+  /* テーブルの境界線をくっつける */
+  /* border-collapse : collapse */
+  /* border-spacing: 0px; */
 }
+
+/* 見出しの線を消す */
 table th, table td {
-  border: solid 1px black;
+  /* border: solid 1px black; */
   /*実線 1px 黒*/
+}
+
+
+.midashi-1{
+  border: solid 1px black;
+  /* 右側の線を消す事ができる */
+  /* border-right-style: none; */
+}
+
+.midashi-2
+{
+  border: solid 1px black;
+}
+
+.midashi-3
+{
+  border: solid 1px red;
+}
+
+.data-1-1{
+  border: solid 1px;
+}
+
+/* 空白を設ける */
+.data-1-2{
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.data-1-3{
+  border: solid 1px red;
 }
 
 .time-zone{
   display: flex;
-
   background-color: antiquewhite;
+  border: solid 1px;
 }
 
 
 .time-start{
   /* background-color: blue; */
+  border: solid 1px;
   width: 3vw;
   height: 3vw;
 }
