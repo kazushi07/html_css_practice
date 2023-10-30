@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="scripts/kazushi_practice.js"></script></head>
+  <title>Document</title>
+<body>
+  <p>sample</p>
+<body>
+    <form action="#" id="form">
+        <input type="text" id="name" name="content"
+        required minlength="4" maxlength="4"
+        style="
+        font-size: x-large;
+        width: 110px;
+        height: 50px;
+        background-color: aquamarine;
+        outline: none;
+        border-style: none;
+        "
+        >
+        <input type="submit" value="送信"
+        style="
+        background-color: bisque;
+        ">
+    </form>
+    <p id="output"></p>
+</body>
+
+<script>
+  // submit時にイベント実行をする関数
+  document.getElementById('form').onsubmit = function (event) {
+      // 再読み込み防止
+      event.preventDefault();
+      // 入力フォームの内容を取得
+      let inputForm = document.getElementById('form').content.value;
+  // 入力内容を画面に出力
+      document.getElementById('output').textContent = `${inputForm}`;
+  }
+</script>
+</html>
